@@ -117,3 +117,6 @@ CONFIGURACION DEL ENTORNO VIRTUAL
 
 # Activa el entorno virtual
 #source nombre_del_entorno/bin/activate
+
+
+Este proyecto fue realizado en el marco del curso IoT Essentials Developer impartido por [Codigo IoT ](https://www.codigoiot.com/) y organizado por la [Asociación Mexicana del Internet de las Cosas](https://www.asociacioniot.org/).
