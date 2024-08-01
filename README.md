@@ -1,13 +1,13 @@
 # ProyectoIoT
-Proyecto de Registro de Ingresos mediante identificación por RFID 
+# Proyecto de Registro de Ingresos mediante identificación por RFID 
 
 
 OBJETIVOS GENERALES
-Desarrollar un prototipo de registros de ingreso por caseta a estudiantes de una universidad obteniendo el id que ingresa; y la fecha y hora que lo hace, almacenándolo en una base de datos para tener un historial de entradas y salidas garantizando la seguridad de accesos y denegando el ingreso a tarjetas no registradas o que intenten ingresar dos veces sin haber registrado la salida previamente, esto para garantizar el denegar el acceso a tarjetas que pudiesen haber sido clonadas
+- Desarrollar un prototipo de registros de ingreso por caseta a estudiantes de una universidad obteniendo el id que ingresa; y la fecha y hora que lo hace, almacenándolo en una base de datos para tener un historial de entradas y salidas garantizando la seguridad de accesos y denegando el ingreso a tarjetas no registradas o que intenten ingresar dos veces sin haber registrado la salida previamente, esto para garantizar el denegar el acceso a tarjetas que pudiesen haber sido clonadas
 
 
 DESCRIPCION DEL PROYECTO
-Este proyecto utiliza un lector RFID RC522 para leer las tarjetas utilizando la librería SimpleMFRC522 y, por medio de un código en Python se comprueba si la tarjeta leída esta previamente registrada o no; en caso de estar registrada manda a la base de datos subida en un servidor local el registro de ingreso para así generar un historial 
+- Este proyecto utiliza un lector RFID RC522 para leer las tarjetas utilizando la librería SimpleMFRC522 y, por medio de un código en Python se comprueba si la tarjeta leída esta previamente registrada o no; en caso de estar registrada manda a la base de datos subida en un servidor local el registro de ingreso para así generar un historial 
 
 OBJETIVOS ESPECIFICOS DEL PROYECTO
 - Comprobar y registrar en un historial los ingresos a la universidad  
