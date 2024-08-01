@@ -58,62 +58,62 @@ GND - Pin físico 6
 
 
 CONFIGURACIÓN DEL ENTORNO
-* Actualizar los paquetes del sistema:
-# sudo apt update
-# sudo apt upgrade
+# Actualizar los paquetes del sistema:
+#sudo apt update
+#sudo apt upgrade
 
-*Instala Apache2
-# sudo apt install apache2
+# Instala Apache2
+#sudo apt install apache2
 
-*Configura Apache2 para que se inicie automáticamente
-# sudo systemctl enable apache2
+# Configura Apache2 para que se inicie automáticamente
+#sudo systemctl enable apache2
 
-* Instalar el servidor de MariaDB
-# sudo apt install mariadb-server
+# Instalar el servidor de MariaDB
+#sudo apt install mariadb-server
 
-* Iniciar el servicio de MariaDB
-# sudo systemctl start mariadb
+# Iniciar el servicio de MariaDB
+#sudo systemctl start mariadb
 
-* Habilitar MariaDB para que se inicie automaticamente al iniciar el sistema
-# sudo systemctl enable mariadb
+# Habilitar MariaDB para que se inicie automaticamente al iniciar el sistema
+#sudo systemctl enable mariadb
 
-*Configurar la seguridad de MariaDB
-# sudo mysql_secure_installation
+# Configurar la seguridad de MariaDB
+#sudo mysql_secure_installation
 
-* Acceder a la consola de MariaDB
-# sudo mysql -u root -p
+# Acceder a la consola de MariaDB
+#sudo mysql -u root -p
 
 
 
 CONFIGURACION DEL ENTORNO GRAFICO DE LA BDD
-*Instala phpMyAdmin
-# sudo apt install phpmyadmin
+# Instala phpMyAdmin
+#sudo apt install phpmyadmin
 
-*Configura Apache2 para que incluya phpMyAdmin
-# sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+# Configura Apache2 para que incluya phpMyAdmin
+#sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 
-*Habilitar acceso remoto en MariaDB
-# sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+# Habilitar acceso remoto en MariaDB
+#sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 
-*Encuentra la linea bind-address y cambiala por esto:
+# Encuentra la linea bind-address y cambiala por esto:
 bind-address = 0.0.0.0
 
-*Guarda el archivo y reinicia MariaDB
-# sudo systemctl restart mariadb
+# Guarda el archivo y reinicia MariaDB
+#sudo systemctl restart mariadb
 
-*Concede permisos para que MariaDB puedo conectarse de cualquier host
+# Concede permisos para que MariaDB puedo conectarse de cualquier host
 GRANT ALL PRIVILEGES ON *.* TO 'usuario'@'%' IDENTIFIED BY 'contraseña';
 FLUSH PRIVILEGES;
 
 CONFIGURACION DEL ENTORNO VIRTUAL
-*Instala Python3
-# sudo apt install python3
+# Instala Python3
+#sudo apt install python3
 
-*Instala venv
-# sudo apt install python3-venv
+# Instala venv
+#sudo apt install python3-venv
 
-*Crea un entorno virtual
-# python3 -m venv nombre_del_entorno
+# Crea un entorno virtual
+#python3 -m venv nombre_del_entorno
 
-*Activa el entorno virtual
-# source nombre_del_entorno/bin/activate
+# Activa el entorno virtual
+#source nombre_del_entorno/bin/activate
